@@ -1,16 +1,18 @@
-
+import { Outlet, Link } from "react-router-dom";
 
 const Footer = () => {
-  
+
   return (
-    <footer>
-      <ul>
-      <li><a className="a-second" href="#about-me">About Me</a></li>
-        <li><a className="a-second" href="#experience">Experience</a></li>
-        <li><a className="a-second" href="#projects">Projects</a></li>
-        <li><a className="a-second" href="#contact">Contact</a></li>
-      </ul>
-    </footer>
+    <>
+      <footer>
+        <ul>
+          <Link className="li-elem" to="/">About Me</Link>
+          <Link className="li-elem" to="/resume">Resume</Link>
+          <Link className="li-elem" to="/portfolio">Portfolio</Link>
+          <Link className="li-elem" to="/contact">Contact</Link>
+        </ul>
+      </footer>
+    </>
   );
 };
 
